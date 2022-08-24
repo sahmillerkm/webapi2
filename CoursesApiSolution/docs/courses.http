@@ -1,0 +1,20 @@
+### Get All Courses
+
+GET http://localhost:9090/courses HTTP/1.1
+Accept: application/json
+
+
+### Get a Course
+
+GET http://localhost:9090/courses/630605810c7f6b929fb0ebb1 HTTP/1.1
+
+### Add a Course (Version 1)
+POST http://localhost:9090/courses HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title": "Event Driven Services",
+    "numberOfHours": 25.5,
+    "deliveryLocation": "Online"
+}
